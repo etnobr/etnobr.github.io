@@ -1,31 +1,49 @@
 @charset "utf-8";
 
 @font-face{
+    font-family: 'Comfortaa';
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url('fonts/Comfortaa-300.woff2'),
+         url('fonts/Comfortaa-300.woff');
+}
+
+@font-face{
     font-family: 'Source Sans Variable';
-    font-weight: 200 900;
+    font-weight: 300 900;
     font-style: normal;
     font-stretch: normal;
-    src: url('fonts/SourceSansVariable-Roman.otf.woff2') format('woff2'),
+    font-display: swap;
+    src: url('fonts/SourceSansVariable-Roman.otf.woff2') format('woff2-variations'),
          url('fonts/SourceSansVariable-Roman.otf.woff') format('woff'),
          url('fonts/SourceSansVariable-Roman.otf') format('opentype');
 }
 
 @font-face{
     font-family: 'Source Sans Variable';
-    font-weight: 200 900;
+    font-weight: 300 900;
     font-style: italic;
     font-stretch: normal;
-    src: url('fonts/SourceSansVariable-Italic.otf.woff2') format('woff2'),
+    font-display: swap;
+    src: url('fonts/SourceSansVariable-Italic.otf.woff2') format('woff2-variations'),
          url('fonts/SourceSansVariable-Italic.otf.woff') format('woff'),
          url('fonts/SourceSansVariable-Italic.otf') format('opentype');
 }
 
-html {
-    font-family: 'Source Sans Variable';
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Source Sans Variable', Helvetica, Arial, Noto Sans, sans-serif;
 }
 
 h1 {
-    font-size: 26px;
+    font-family: 'Comfortaa';
+    font-size: 34px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
 }
 
 p {
@@ -33,7 +51,7 @@ p {
 }
 
 .light {
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .normal {
@@ -41,7 +59,7 @@ p {
 }
 
 .italic {
-    font-style: italic;
+    font-variation-settings: 'ital' 1;
     font-weight: 400;
 }
 
