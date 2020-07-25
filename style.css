@@ -2,11 +2,11 @@
 
 @font-face{
     font-family: 'Comfortaa';
-    font-weight: 300;
     font-style: normal;
     font-display: swap;
-    src: url('fonts/Comfortaa-300.woff2'),
-         url('fonts/Comfortaa-300.woff');
+    src: url('fonts/Comfortaa-Light.woff2') format('woff2'),
+         url('fonts/Comfortaa-Light.woff') format('woff'),
+         url('fonts/Comfortaa-Light.otf') format('opentype');
 }
 
 @font-face{
