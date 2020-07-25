@@ -60,8 +60,14 @@ p {
 
 .italic {
     font-style: italic;
-    font-variation-settings: 'ital' 1;
     font-weight: 400;
+}
+
+@supports (font-variation-settings: 'ital' 1) {
+    .italic {
+        font-variation-settings: 'ital' 1;
+        font-weight: 400;
+    }
 }
 
 .semibold {
