@@ -59,6 +59,7 @@ p {
 }
 
 .italic {
+    font-style: italic;
     font-variation-settings: 'ital' 1;
     font-weight: 400;
 }
